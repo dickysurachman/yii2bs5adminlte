@@ -8,7 +8,7 @@ use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
-
+use yii\bootstrap5\Html;
 /**
  * Site controller
  */
@@ -124,8 +124,26 @@ class SiteController extends Controller
     public function actionEvents($start=NULL,$end=NULL,$_=NULL)
     {
       //$this->layout=false;
-      Yii::$app->response->format = Response::FORMAT_HTML;
-      return $this->render('index'); // views/event_detail.php    
+      $request = Yii::$app->request;
+      if($request->isAjax){
+        //Yii::$app->response->format = Response::FORMAT_HTML;
+        //return $this->renderAjax('event_detail');
+        Yii::$app->response->format = Response::FORMAT_JSON;
+            return [
+                    'title'=> 'Whzsettings ',
+                    'content'=>$this->renderAjax('event_detail'),
+                    'footer'=> Html::button('Close',['class'=>'btn btn-secondary float-left','data-bs-dismiss'=>'modal'])
+                ];
+        }    
+        else {
+        return $this->render('event_detail'); // views/event_detail.php    
+
+        }
+
+
+
+      //Yii::$app->response->format = Response::FORMAT_HTML;
+      //return $this->render('index'); // views/event_detail.php    
 
 /*    \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
     $events = array();

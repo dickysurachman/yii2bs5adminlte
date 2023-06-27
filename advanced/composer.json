@@ -35,7 +35,8 @@
         "kriss/yii2-calendar-schedule": "^2.1",
         "2amigos/yii2-ckeditor-widget": "*",
         "alexantr/yii2-elfinder": "^1.8",
-        "phpoffice/phpspreadsheet": "^1.29"
+        "phpoffice/phpspreadsheet": "^1.29",
+        "kartik-v/yii2-widget-datetimepicker": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

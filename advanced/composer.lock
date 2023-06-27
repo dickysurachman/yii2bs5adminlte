@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d4c702b7bc3a0ec345ff3c937c1c464",
+    "content-hash": "be02e5d455e62da8f50d49734dc8b5fc",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -2241,7 +2241,7 @@
         },
         {
             "name": "kartik-v/yii2-widget-datetimepicker",
-            "version": "v1.5.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-datetimepicker.git",
@@ -2256,6 +2256,7 @@
             "require": {
                 "kartik-v/yii2-krajee-base": ">=3.0.4"
             },
+            "default-branch": true,
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
@@ -9275,7 +9276,8 @@
         "kartik-v/yii2-export": 20,
         "kartik-v/yii2-widget-depdrop": 20,
         "denkorolkov/yii2-ajaxcrud-bs5": 20,
-        "kartik-v/yii2-bootstrap5-dropdown": 20
+        "kartik-v/yii2-bootstrap5-dropdown": 20,
+        "kartik-v/yii2-widget-datetimepicker": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
